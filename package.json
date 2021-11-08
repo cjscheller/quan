@@ -1,0 +1,28 @@
+{
+  "name": "v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "api": "node app.js",
+    "gui": "cd quan-vue && npm run tauri:serve",
+    "gui-dev": "cd quan-vue && npm run serve",
+    "dev": "npm run api & npm run gui-dev",
+    "app": "npm run api & npm run gui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.24.0",
+    "csv-parse": "^4.15.4",
+    "graphql": "^15.5.0",
+    "graphql-fields": "^2.0.3",
+    "graphql-upload": "^12.0.0",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "regenerator-runtime": "^0.13.7"
+  }
+}
